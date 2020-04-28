@@ -2,33 +2,28 @@ package com.company;
 
 public class Main {
 
+       public  static  int n =1;
+
         public  String func(String[] value, int[]chance){
-            int y = 0;
-            for(int f = 0; f< chance.length -1; f++){
-                y = y + chance[f];
-            }
-
-
-            String h = "";
-            for(int i=0; i<chance.length; i++){
-
-
-                String k = "";
-                for(int j = 0; j < chance[i]/y; j++){
-                    h= h + value[i];
-                }
+            int sum = 0;
+            for(int i = 0; i< chance.length; i++){
+                sum+= chance[i];
 
             }
+            StringBuilder sb = new StringBuilder();
+            for(int i = 0;i < value.length; i++){
+                sb.append(value[i]+" "+chance[i]/sum*n+" ,");
+            }
+            n++;
+            return sb.toString();
 
 
 
 
-            return h;
+
         }
 
     public static void main(String[] args) {
-	  Main m = new Main();
-	  String n = m.func(new String[]{"Пейсинг", "не", "нужен"}, new int[]{10, 61, 30});
-        System.out.println(n);
+
     }
 }
