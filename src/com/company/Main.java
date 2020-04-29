@@ -22,7 +22,7 @@ public class Main {
 
 
                 if(iNumber>=chance[i] && chance[i]<iNumber){
-                    sb.append(value[i]+" "+(double)chance[i]/sum*n+" ,");
+                    sb.append(value[i]+ " ,");
                     j = j + sb;
                 }
 
