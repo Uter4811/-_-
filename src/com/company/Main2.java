@@ -57,8 +57,29 @@ public class Main2 {
         }
         System.out.println("a = " + a + " b = " + b + " c = " + c);*/
 
-        String h = funcA(new String[]{"a", "b", "c"});
-        System.out.println(h);
+
+        int n = 0;
+        int a = 0;
+        int b = 0;
+        int c = 0;
+        while (n < 1000) {
+            String func = funcA(new String[]{"a", "b", "c"});
+            for (int i = 0; i < func.length(); i++) {
+                switch (func) {
+                    case ("a"):
+                        a++;
+                        break;
+                    case ("b"):
+                        b++;
+                        break;
+                    case ("c"):
+                        c++;
+                        break;
+                }
+            }
+            n++;
+        }
+        System.out.println("a = " + a + " b = " + b + " c = " + c);
 
     }
     public static String funcA(String [] enter){
