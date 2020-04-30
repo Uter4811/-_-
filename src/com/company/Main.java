@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Main {
 
-    public  static  int n =1;
+  /*  public  static  int n =1;
 
 
     public static String func(String[] value, int[]chance){
@@ -34,12 +34,13 @@ public class Main {
             return j;
 
         }
+*/
 
 
 
     public static void main(String[] args) {
 
-        int n = 0;
+     /*   int n = 0;
         int a = 0;
         int b = 0;
         int c = 0;
@@ -64,7 +65,7 @@ public class Main {
             }
 
             System.out.println("a = " + a + " b = " + b + " c = " + c);
-        }
-
+        */
+    }
 
     }
