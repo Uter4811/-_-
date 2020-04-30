@@ -57,8 +57,8 @@ public class Main2 {
         }
         System.out.println("a = " + a + " b = " + b + " c = " + c);
     }
-    public static String funcA(){
-        return "a";
+    public static String funcA(String enter){
+        return enter;
     }
 }
 
