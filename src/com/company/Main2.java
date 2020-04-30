@@ -20,8 +20,8 @@ public class Main2 {
 
         StringBuilder sb = new StringBuilder();
 
-
-            int iNumber = (int) (Math.random() * ++sum) + 1;
+           int iNumber = 1 + (int) (Math.random() * sum);
+           // int iNumber = (int) (Math.random() * ++sum) + 1;
             int Inter = (int) (Math.random() * ++rand) + 1;
 
 
@@ -31,7 +31,7 @@ public class Main2 {
              for(int i = 1; i< value.length; i++) {
                  if(chance[0] > iNumber ){
 
-                     sb.append(value[i]);
+                     sb.append(value[0]);
                      j = j + sb;
 
                      return j;
