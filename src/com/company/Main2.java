@@ -61,7 +61,7 @@ public class Main2 {
         int b = 0;
         int c = 0;
         while (n < 1000) {
-            String func = func(new String[]{"a", "b", "c"}, new int[]{2, 5, 10});
+            String func = func(new String[]{"a", "b", "c"}, new int[]{10, 0, 0});
 
             for (int i = 0; i < func.length(); i++) {
                 switch (func) {
