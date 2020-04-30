@@ -57,12 +57,14 @@ public class Main2 {
         }
         System.out.println("a = " + a + " b = " + b + " c = " + c);*/
 
-        boolean h = funcA("Проверка").equals("неправильно");
+        String h = funcA(new String[]{"a", "b", "c"});
         System.out.println(h);
 
     }
-    public static String funcA(String enter){
-        return enter;
+    public static String funcA(String [] enter){
+        int lenenter = enter.length;
+        int iNumber2 = 0 + (int) (Math.random() * lenenter); ;
+        return enter[iNumber2];
     }
 }
 
