@@ -34,7 +34,7 @@ public class Main2 {
             }
 
     public static void main(String[] args) {
-        /*int n = 0;
+        int n = 0;
         int a = 0;
         int b = 0;
         int c = 0;
@@ -55,10 +55,10 @@ public class Main2 {
             }
             n++;
         }
-        System.out.println("a = " + a + " b = " + b + " c = " + c);*/
+        System.out.println("a = " + a + " b = " + b + " c = " + c);
 
 
-        int n = 0;
+      /*  int n = 0;
         int a = 0;
         int b = 0;
         int c = 0;
@@ -75,12 +75,12 @@ public class Main2 {
                     case ("c"):
                         c++;
                         break;
-                
+
             }
             n++;
         }
         System.out.println("a = " + a + " b = " + b + " c = " + c);
-
+*/
     }
     public static String funcA(String [] enter){
         int lenenter = enter.length;
