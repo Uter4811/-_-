@@ -34,13 +34,15 @@ public class Main2 {
     }
 
     public static void main(String[] args) {
+       
+
         int n = 0;
         int a = 0;
         int b = 0;
         int c = 0;
         while (n < 1000) {
             String func = func(new String[]{"a", "b", "c"}, new int[]{10, 0, 0});
-          /*  for (int i = 0; i < func.length(); i++) {
+            for (int i = 0; i < func.length(); i++) {
                 switch (func) {
                     case ("a"):
                         a++;
@@ -56,7 +58,7 @@ public class Main2 {
             n++;
         }
         System.out.println("a = " + a + " b = " + b + " c = " + c);
-*/
+
 
       /*  int n = 0;
         int a = 0;
@@ -88,5 +90,5 @@ public class Main2 {
         return enter[iNumber2];
     }*/
     }
-}
+
 
