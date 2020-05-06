@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d75d0dcb-3c61-48a9-b362-26282f6ba4b0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main2.java" afterPath="$PROJECT_DIR$/src/com/company/Main2.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,9 +27,11 @@
       <file leaf-file-name="Main2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="57" column="67" lean-forward="false" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
-              <folding />
+            <state relative-caret-position="1067">
+              <caret line="90" column="1" lean-forward="false" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+              <folding>
+                <marker date="1588757996162" expanded="true" signature="1063:1569" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -254,7 +256,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="57" column="67" lean-forward="false" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
-          <folding />
+          <folding>
+            <marker date="1588757996162" expanded="true" signature="1063:1569" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -276,9 +280,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="57" column="67" lean-forward="false" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="1067">
+          <caret line="90" column="1" lean-forward="false" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+          <folding>
+            <marker date="1588757996162" expanded="true" signature="1063:1569" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
