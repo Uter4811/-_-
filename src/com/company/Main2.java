@@ -34,7 +34,7 @@ public class Main2 {
     }
 
     public static void main(String[] args) {
-       
+
 
         int n = 0;
         int a = 0;
@@ -42,18 +42,16 @@ public class Main2 {
         int c = 0;
         while (n < 1000) {
             String func = func(new String[]{"a", "b", "c"}, new int[]{10, 0, 0});
-            for (int i = 0; i < func.length(); i++) {
-                switch (func) {
-                    case ("a"):
-                        a++;
-                        break;
-                    case ("b"):
-                        b++;
-                        break;
-                    case ("c"):
-                        c++;
-                        break;
-                }
+            switch (func) {
+                case ("a"):
+                    a++;
+                    break;
+                case ("b"):
+                    b++;
+                    break;
+                case ("c"):
+                    c++;
+                    break;
             }
             n++;
         }
