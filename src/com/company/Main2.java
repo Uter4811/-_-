@@ -2,24 +2,76 @@ package com.company;
 
 
 
+
+import java.util.Arrays;
 import java.util.Random;
 
 public class Main2 {
 
     public static String func(String[] value, int[] chance) {
-        String j = "";
+
         int sum = 0;
-        int rand = value.length;
+
         for (int i = 0; i < chance.length; i++) {
             sum += chance[i];
         }
-        StringBuilder sb = new StringBuilder();
+
 
         int iNumber = 1 + (int) (Math.random() * sum);
         // int iNumber = (int) (Math.random() * ++sum) + 1;
-        int Inter = (int) (Math.random() * ++rand) + 1;
+       // int Inter = (int) (Math.random() * ++rand) + 1;
 
-        for (int i = 1; i < value.length; i++) {
+        int[] arr = new int[chance.length];
+        for(int i = 0; i<chance.length; i++){
+            arr[i] = chance[i];
+        }
+
+        Arrays.sort(arr);
+
+       /* for (int i = 0; i < arr.length; i++) {
+            int min = arr[i];
+            int min_i = i;
+
+            for (int k = i+1; k < arr.length; k++) {
+
+                if (arr[k] < min) {
+                    min = arr[k];
+                    min_i = k;
+                }
+            }
+
+            if (i != min_i) {
+                int tmp = arr[i];
+                arr[i] = arr[min_i];
+                arr[min_i] = tmp;
+            }
+        }*/
+
+        int r = 0;
+
+        for(int i = arr.length-1; i>= 0; i--){
+            sum = sum - arr[i];
+            if(iNumber>= sum){
+                r = arr[i];
+                break;
+            }
+
+
+
+
+        }
+        int q = 0;
+        for(int i= 0; i< chance.length; i++){
+            if(chance[i] == r){
+                q = i;
+            }
+        }
+
+
+
+
+
+      /* for (int i = 1; i < value.length; i++) {
             if (chance[0] > iNumber) {
                 sb.append(value[0]);
                 j = j + sb;
@@ -29,8 +81,8 @@ public class Main2 {
                 j = j + sb;
                 return j;
             }
-        }
-        return j;
+        }*/
+        return value[q];
     }
 
     public static void main(String[] args) {
@@ -41,7 +93,7 @@ public class Main2 {
         int b = 0;
         int c = 0;
         while (n < 1000) {
-            String func = func(new String[]{"a", "b", "c"}, new int[]{10, 0, 0});
+            String func = func(new String[]{"a", "b", "c"}, new int[]{2, 4, 3});
             switch (func) {
                 case ("a"):
                     a++;
