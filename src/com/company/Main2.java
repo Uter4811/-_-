@@ -18,17 +18,26 @@ public class Main2 {
 
 
         int iNumber = 1 + (int) (Math.random() * sum);
-        
+
+
 
         int q = 0;
-            for(int i = chance.length-1 ; i>=0; i--){
-                sum = sum - chance[i];
-         if(sum>iNumber) {
-               q = i;
-               break;
-           }
-
+        for (int i = 0; i < chance.length; i++)
+        {
+            if (iNumber <= chance[i])
+            {
+                q = i;
+                break;
             }
+            chance[i + 1] += chance[i];
+        }
+        return value[q];
+
+}
+
+
+
+
 
 
 
@@ -51,8 +60,8 @@ public class Main2 {
                 return j;
             }
         }*/
-        return value[q];
-    }
+
+
 
     public static void main(String[] args) {
 
