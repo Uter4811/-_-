@@ -18,54 +18,23 @@ public class Main2 {
 
 
         int iNumber = 1 + (int) (Math.random() * sum);
-        // int iNumber = (int) (Math.random() * ++sum) + 1;
-       // int Inter = (int) (Math.random() * ++rand) + 1;
+        
 
-        int[] arr = new int[chance.length];
-        for(int i = 0; i<chance.length; i++){
-            arr[i] = chance[i];
-        }
-
-        Arrays.sort(arr);
-
-       /* for (int i = 0; i < arr.length; i++) {
-            int min = arr[i];
-            int min_i = i;
-
-            for (int k = i+1; k < arr.length; k++) {
-
-                if (arr[k] < min) {
-                    min = arr[k];
-                    min_i = k;
-                }
-            }
-
-            if (i != min_i) {
-                int tmp = arr[i];
-                arr[i] = arr[min_i];
-                arr[min_i] = tmp;
-            }
-        }*/
-
-        int r = 0;
-
-        for(int i = arr.length-1; i>= 0; i--){
-            sum = sum - arr[i];
-            if(iNumber>= sum){
-                r = arr[i];
-                break;
-            }
-
-
-
-
-        }
         int q = 0;
-        for(int i= 0; i< chance.length; i++){
-            if(chance[i] == r){
-                q = i;
+            for(int i = chance.length-1 ; i>=0; i--){
+                sum = sum - chance[i];
+         if(sum>iNumber) {
+               q = i;
+               break;
+           }
+
             }
-        }
+
+
+
+
+
+
 
 
 
@@ -93,7 +62,7 @@ public class Main2 {
         int b = 0;
         int c = 0;
         while (n < 1000) {
-            String func = func(new String[]{"a", "b", "c"}, new int[]{2, 4, 3});
+            String func = func(new String[]{"a", "b", "c"}, new int[]{5, 5, 5});
             switch (func) {
                 case ("a"):
                     a++;
